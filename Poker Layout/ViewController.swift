@@ -9,16 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var helpButton: UIButton!
+    
     override func viewDidLoad() {
+        startButton?.layer.cornerRadius = 15
+        helpButton?.layer.cornerRadius = 15
+        let defaults = UserDefaults.standard
+        defaults.set(3, forKey: "players")
+        defaults.set(["none"], forKey: "names")
+        // Receive
+
         super.viewDidLoad()
     }
-    
-    var mainView1 = ViewController()
-    var selectPlayers1 = SelectPlayers()
-    var namePlayers1 = NamePlayers()
-    var tableLayout1 = TableLayout()
-    
-    
+
+
+
 }
 

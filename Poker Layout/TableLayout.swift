@@ -10,16 +10,16 @@ import UIKit
 
 class TableLayout: ViewController {
 
+    var pInfo = SelectPlayers()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
-    var mainView4 = ViewController()
-    var selectPlayers4 = SelectPlayers()
-    var namePlayers4 = NamePlayers()
-    var tableLayout4 = TableLayout()
+    
+    @IBOutlet weak var resultsLabel: UITextView!
+    
     
     
 }

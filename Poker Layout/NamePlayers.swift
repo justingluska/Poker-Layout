@@ -9,14 +9,14 @@
 import UIKit
 
 class NamePlayers: ViewController {
-
+    
+    var secondPlayers:Int = 3
+    
     override func viewDidLoad() {
+        playerAmountLabel.text = "\(secondPlayers)"
         super.viewDidLoad()
     }
-    
-    var mainView3 = ViewController()
-    var selectPlayers3 = SelectPlayers()
-    var namePlayers3 = NamePlayers()
-    var tableLayout3 = TableLayout()
 
+    
+    @IBOutlet weak var playerAmountLabel: UILabel!
 }
