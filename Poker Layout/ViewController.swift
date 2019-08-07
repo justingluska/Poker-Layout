@@ -12,9 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    var mainView1 = ViewController()
+    var selectPlayers1 = SelectPlayers()
+    var namePlayers1 = NamePlayers()
+    var tableLayout1 = TableLayout()
+    
+    
 }
 
