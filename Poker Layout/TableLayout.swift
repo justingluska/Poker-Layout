@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableLayout: ViewController {
+class TableLayout: UIViewController {
 
     @IBOutlet weak var resultsLabel: UITextView!
     @IBOutlet weak var xPlayerTable: UILabel!

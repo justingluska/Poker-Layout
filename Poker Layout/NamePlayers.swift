@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NamePlayers: ViewController {
+class NamePlayers: UIViewController {
     
     @IBOutlet weak var player1: UITextField!
     @IBOutlet weak var player2: UITextField!
@@ -341,8 +341,10 @@ class NamePlayers: ViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toLayout"){
         var ffP = segue.destination as! TableLayout
         ffP.finalPlayers = String(self.secondPlayers)
         ffP.finalNames = ppNames
+        }
     }
 }

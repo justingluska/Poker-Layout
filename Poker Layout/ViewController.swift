@@ -7,20 +7,20 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class ViewController: UIViewController {
     
+
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var helpButton: UIButton!
+
+    var banner: GADBannerView!
     
     override func viewDidLoad() {
-        startButton?.layer.cornerRadius = 15
-        helpButton?.layer.cornerRadius = 15
-        let defaults = UserDefaults.standard
-        defaults.set(3, forKey: "players")
-        defaults.set(["none"], forKey: "names")
-        // Receive
-
+//        bannerView.adUnitID = "ca-app-pub-9134328104554845~4570256127"
+//        bannerView.rootViewController = self
+//        bannerView.load(GADRequest())
         super.viewDidLoad()
     }
 

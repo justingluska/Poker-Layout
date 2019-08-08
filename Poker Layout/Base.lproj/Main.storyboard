@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,28 +15,23 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Poker_Layout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home.png" translatesAutoresizingMaskIntoConstraints="NO" id="lvF-wh-lYC">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jqd-RM-Dxo">
-                                <rect key="frame" x="86" y="414" width="148" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.27068858699999998" green="0.41334840070000001" blue="0.50146732230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="31"/>
-                                <state key="normal" title="Start">
-                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Y36-nJ-nAn" kind="show" id="h1T-be-Ndh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pof-wV-g41">
-                                <rect key="frame" x="107" y="494" width="106" height="40"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.27068858699999998" green="0.41334840070000001" blue="0.50146732230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bex-an-oju" customClass="GADBannerView" customModule="Poker_Layout" customModuleProvider="target">
+                                <rect key="frame" x="27.5" y="607" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="8YM-KQ-Ojd"/>
+                                    <constraint firstAttribute="height" constant="50" id="RY5-Fv-WOl"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pof-wV-g41">
+                                <rect key="frame" x="113" y="549" width="149" height="40"/>
+                                <color key="backgroundColor" red="0.33725490196078434" green="0.49803921568627452" blue="0.792156862745098" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
                                 <state key="normal" title="Help">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -45,37 +40,54 @@
                                     <segue destination="sIg-lS-301" kind="show" id="bbS-ys-dFv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogh-1k-INu">
+                                <rect key="frame" x="77" y="478" width="221" height="45"/>
+                                <color key="backgroundColor" red="0.33725490196078434" green="0.49803921568627452" blue="0.792156862745098" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.64050426800000004" green="0.64684589439999995" blue="0.64684589439999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.64050426800000004" green="0.64684589439999995" blue="0.64684589439999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Y36-nJ-nAn" kind="show" id="3ce-c0-O0E"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.55663951700468051" green="0.60365863438939715" blue="0.73596129441624369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.64050426800000004" green="0.64684589439999995" blue="0.64684589439999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lvF-wh-lYC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9aR-HZ-9NN"/>
-                            <constraint firstItem="lvF-wh-lYC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ndq-Af-TxY"/>
-                            <constraint firstItem="lvF-wh-lYC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="XlU-Wa-snG"/>
-                            <constraint firstItem="lvF-wh-lYC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ue0-8B-cFh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ogh-1k-INu" secondAttribute="trailing" constant="77" id="24S-tr-ZZF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pof-wV-g41" secondAttribute="trailing" constant="113" id="BjU-St-FQ5"/>
+                            <constraint firstItem="lvF-wh-lYC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HAi-An-JCh"/>
+                            <constraint firstItem="Ogh-1k-INu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="ICb-DF-jG9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bex-an-oju" secondAttribute="bottom" constant="10" id="Lor-Xg-g4h"/>
+                            <constraint firstItem="pof-wV-g41" firstAttribute="top" secondItem="Ogh-1k-INu" secondAttribute="bottom" constant="26" id="WQh-0p-ciw"/>
+                            <constraint firstItem="Bex-an-oju" firstAttribute="top" secondItem="pof-wV-g41" secondAttribute="bottom" constant="18" id="bfm-U1-UjJ"/>
+                            <constraint firstAttribute="trailing" secondItem="lvF-wh-lYC" secondAttribute="trailing" id="dJb-i2-8PV"/>
+                            <constraint firstItem="lvF-wh-lYC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gwP-xD-wlN"/>
+                            <constraint firstItem="pof-wV-g41" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="liM-ks-TuI"/>
+                            <constraint firstItem="Bex-an-oju" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oGU-eD-rvO"/>
+                            <constraint firstAttribute="bottom" secondItem="lvF-wh-lYC" secondAttribute="bottom" id="oNJ-Lo-MKh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="startButton" destination="Jqd-RM-Dxo" id="I6J-2F-hVV"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="260.15625" y="134.84626647144947"/>
+            <point key="canvasLocation" x="258.75" y="134.1549295774648"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Stj-XC-3Nx">
             <objects>
                 <viewController id="sIg-lS-301" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1ly-2Y-WWe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="help.png" translatesAutoresizingMaskIntoConstraints="NO" id="NrZ-Yg-pwK">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwC-LF-nWW">
-                                <rect key="frame" x="0.0" y="529" width="320" height="30"/>
+                                <rect key="frame" x="0.0" y="628" width="375" height="30"/>
                                 <state key="normal" title="go back">
                                     <color key="titleColor" red="0.12549019610000001" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -106,11 +118,11 @@
             <objects>
                 <viewController storyboardIdentifier="SelectPlayers" id="Y36-nJ-nAn" customClass="SelectPlayers" customModule="Poker_Layout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Zs-lf-Nqq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="3" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="rvi-6i-w2z">
-                                <rect key="frame" x="14" y="161" width="292" height="30"/>
+                                <rect key="frame" x="14" y="161" width="347" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="minimumTrackTintColor" red="0.50146732230000002" green="0.12211872310000001" blue="0.070339911419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -118,62 +130,78 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Player Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNR-1g-1EB">
-                                <rect key="frame" x="30" y="89" width="260" height="33"/>
+                                <rect key="frame" x="30" y="89" width="315" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[3]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nh2-2m-0Tb">
-                                <rect key="frame" x="97" y="198" width="127" height="75"/>
+                                <rect key="frame" x="97" y="198" width="182" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="52"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*Poker games can have no less than 3 players and no greater than 10" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="Qxn-Yf-N4s">
-                                <rect key="frame" x="16" y="281" width="288" height="83"/>
+                                <rect key="frame" x="16" y="281" width="343" height="182"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjf-e3-5xp">
-                                <rect key="frame" x="137" y="426" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Da-Qh-Ubb">
+                                <rect key="frame" x="16" y="627" width="82" height="30"/>
+                                <color key="backgroundColor" red="0.33725490200000002" green="0.49803921569999998" blue="0.79215686269999996" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.64050426800000004" green="0.64684589439999995" blue="0.64684589439999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ziY-YE-6FI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjf-e3-5xp">
+                                <rect key="frame" x="106" y="627" width="253" height="30"/>
+                                <color key="backgroundColor" red="0.33725490200000002" green="0.49803921569999998" blue="0.79215686269999996" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.64050426800000004" green="0.64684589439999995" blue="0.64684589439999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="nextPage:" destination="Y36-nJ-nAn" eventType="touchUpInside" id="c68-fV-uld"/>
                                     <segue destination="f9Y-R9-hjT" kind="presentation" identifier="toPlayer" id="zu7-v5-dOL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Da-Qh-Ubb">
-                                <rect key="frame" x="51" y="393" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="SDq-me-0SD"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Z4-bj-cOq" firstAttribute="trailing" secondItem="Vjf-e3-5xp" secondAttribute="trailing" constant="16" id="4bV-U6-HRp"/>
+                            <constraint firstItem="2Z4-bj-cOq" firstAttribute="bottom" secondItem="Vjf-e3-5xp" secondAttribute="bottom" constant="10" id="GGE-bR-PjF"/>
+                            <constraint firstItem="2Z4-bj-cOq" firstAttribute="trailing" secondItem="8Da-Qh-Ubb" secondAttribute="trailing" constant="277" id="HLG-dc-ork"/>
+                            <constraint firstItem="8Da-Qh-Ubb" firstAttribute="leading" secondItem="2Z4-bj-cOq" secondAttribute="leading" constant="16" id="dle-8o-f2R"/>
+                            <constraint firstItem="2Z4-bj-cOq" firstAttribute="bottom" secondItem="8Da-Qh-Ubb" secondAttribute="bottom" constant="10" id="hZc-z9-Qpd"/>
+                            <constraint firstItem="Vjf-e3-5xp" firstAttribute="leading" secondItem="2Z4-bj-cOq" secondAttribute="leading" constant="106" id="wrH-3v-evd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2Z4-bj-cOq"/>
                     </view>
                     <connections>
+                        <outlet property="back" destination="8Da-Qh-Ubb" id="ldU-Wx-yPY"/>
+                        <outlet property="moveOn" destination="Vjf-e3-5xp" id="SZq-23-hk4"/>
                         <outlet property="playerLabel" destination="nh2-2m-0Tb" id="uP1-Hb-cCA"/>
                         <outlet property="sliderNumber" destination="rvi-6i-w2z" id="ega-ro-kYq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zxt-xC-EXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1059.375" y="136.26760563380282"/>
+            <point key="canvasLocation" x="1058.4000000000001" y="135.38230884557723"/>
         </scene>
         <!--Name Players-->
         <scene sceneID="tFl-DL-98u">
             <objects>
                 <viewController storyboardIdentifier="NamePlayers" id="f9Y-R9-hjT" customClass="NamePlayers" customModule="Poker_Layout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="11r-sa-Dhh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XJt-KB-gbk">
@@ -258,12 +286,12 @@
                                     <segue destination="yTB-ux-bT0" kind="presentation" identifier="toLayout" id="mSB-AT-HPq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d83-Tb-PgR">
-                                <rect key="frame" x="39" y="436" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBF-pt-LdC">
+                                <rect key="frame" x="39" y="448" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="Y36-nJ-nAn" kind="show" id="iaj-CX-KaI"/>
+                                    <segue destination="Y36-nJ-nAn" kind="show" id="dmz-mB-jXB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -293,7 +321,7 @@
             <objects>
                 <viewController storyboardIdentifier="TableLayout" id="yTB-ux-bT0" customClass="TableLayout" customModule="Poker_Layout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Mk-LZ-YOw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRY-co-Td3">
@@ -337,7 +365,7 @@
         <image name="home.png" width="612" height="792"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="h1T-be-Ndh"/>
-        <segue reference="hWB-qs-ewE"/>
+        <segue reference="3ce-c0-O0E"/>
+        <segue reference="ziY-YE-6FI"/>
     </inferredMetricsTieBreakers>
 </document>

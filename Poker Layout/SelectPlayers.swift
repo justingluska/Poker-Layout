@@ -8,15 +8,19 @@
 
 import UIKit
 
-class SelectPlayers: ViewController {
+class SelectPlayers: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
         
+        super.viewDidLoad()
+        moveOn.layer.cornerRadius = 15
+        back.layer.cornerRadius = 15
     }
     
     var playerCount = 3
     
+    @IBOutlet weak var moveOn: UIButton!
+    @IBOutlet weak var back: UIButton!
     
     @IBOutlet weak var playerLabel: UILabel!
     
@@ -33,8 +37,10 @@ class SelectPlayers: ViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toPlayer"){
         var fP = segue.destination as! NamePlayers
         fP.secondPlayers = self.playerCount
         fP.enterNames = "Enter \(self.playerCount) Names"
+        }
     }
 }
