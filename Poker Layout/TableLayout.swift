@@ -10,11 +10,18 @@ import UIKit
 
 class TableLayout: ViewController {
 
-    var pInfo = SelectPlayers()
+    var finalNames = ""
+    var finalPlayers = 3
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        finalNames = String(finalNames)
+        if(finalPlayers == 3){
+            resultsLabel.text = "\(finalPlayers) - \(finalNames)"
+        }
+        else{
+            resultsLabel.text = "more than 3"
+        }
     }
     
     

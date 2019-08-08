@@ -216,6 +216,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
+                                    <action selector="nextButton:" destination="f9Y-R9-hjT" eventType="touchUpInside" id="Kfe-or-dAJ"/>
                                     <segue destination="yTB-ux-bT0" kind="presentation" identifier="toLayout" id="mSB-AT-HPq"/>
                                 </connections>
                             </button>
@@ -227,19 +228,22 @@
                                     <segue destination="Y36-nJ-nAn" kind="show" id="iaj-CX-KaI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[3]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMb-3c-cVz">
-                                <rect key="frame" x="-17" y="152" width="127" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="52"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="S4n-kf-JUJ"/>
                     </view>
                     <connections>
-                        <outlet property="playerAmountLabel" destination="MMb-3c-cVz" id="87k-OF-Xwf"/>
+                        <outlet property="enterPlayNamesLabel" destination="wKI-2c-IrL" id="Uo7-ag-Ukr"/>
+                        <outlet property="player1" destination="K3o-Vc-4qL" id="4uf-yU-mb2"/>
+                        <outlet property="player10" destination="NTn-FK-uvD" id="kje-Rt-ytA"/>
+                        <outlet property="player2" destination="4sK-Fy-UJy" id="hCS-Lg-CTB"/>
+                        <outlet property="player3" destination="bFu-21-MJX" id="EFD-Lx-lvo"/>
+                        <outlet property="player4" destination="LgW-11-upd" id="70x-zg-Lmn"/>
+                        <outlet property="player5" destination="12a-HI-hCW" id="rr4-fw-2p6"/>
+                        <outlet property="player6" destination="Dfz-eo-9GV" id="dhj-CD-u7Z"/>
+                        <outlet property="player7" destination="i2F-vY-Ssk" id="HCB-of-8a3"/>
+                        <outlet property="player8" destination="G7R-XS-3to" id="n83-IN-ox8"/>
+                        <outlet property="player9" destination="kyh-y6-Qhp" id="FGA-EV-FWT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZC-PB-GEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -293,7 +297,6 @@
         <image name="LayoutTitle" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zu7-v5-dOL"/>
-        <segue reference="Dfi-wf-axM"/>
+        <segue reference="iaj-CX-KaI"/>
     </inferredMetricsTieBreakers>
 </document>
