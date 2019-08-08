@@ -11,14 +11,14 @@ import CoreData
 import GoogleMobileAds
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GADBannerViewDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544/2934735716")
-        GADMobileAds.sharedInstance().start(completionHandler: nil)
+//        GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544/2934735716")
+//        GADMobileAds.sharedInstance().start(completionHandler: nil)
         // Override point for customization after application launch.
         return true
     }
