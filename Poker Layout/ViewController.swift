@@ -20,11 +20,20 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bannerView.adUnitID = "    ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adSize = kGADAdSizeSmartBannerPortrait
+        bannerView.delegate = self
         bannerView.rootViewController = self
+        bannerView.isHidden = true
         bannerView.load(GADRequest())
     }
-
+    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        bannerView.isHidden = false
+    }
+    func adView(_ bannerView: GADBannerView,
+                didFailToReceiveAdWithError error: GADRequestError) {
+        bannerView.isHidden = true
+    }
 
 
 }
