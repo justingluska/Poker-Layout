@@ -145,7 +145,7 @@ class NamePlayers: ViewController {
         self.present(alert, animated: true)
     }
 
-    var ppNames = ""
+    var ppNames:String = ""
     
     @IBAction func nextButton(_ sender: UIButton) {
         if(secondPlayers == 3){
@@ -159,7 +159,7 @@ class NamePlayers: ViewController {
                 emptyTextAlert()
             }
             let pNames = [player1.text!, player2.text!, player3.text!].shuffled()
-            ppNames = "\(pNames)"
+            ppNames = "\(pNames[0])\n\(pNames[1])\n\(pNames[2])"
         }
         else if(secondPlayers == 4){
             if((player1.text ?? "").isEmpty){
@@ -174,8 +174,8 @@ class NamePlayers: ViewController {
             if((player4.text ?? "").isEmpty){
                 emptyTextAlert()
             }
-            let pNames = [player1.text, player2.text, player3.text].shuffled()
-            ppNames = "\(pNames)"
+            let pNames = [player1.text!, player2.text!, player3.text!, player4.text!].shuffled()
+            ppNames = "\(pNames[0])\n\(pNames[1])\n\(pNames[2])\n\(pNames[3])"
         }
         else if(secondPlayers == 5){
             if((player1.text ?? "").isEmpty){
@@ -193,8 +193,8 @@ class NamePlayers: ViewController {
             if((player5.text ?? "").isEmpty){
                 emptyTextAlert()
             }
-            let pNames = [player1.text, player2.text, player3.text].shuffled()
-            ppNames = "\(pNames)"
+            let pNames = [player1.text!, player2.text!, player3.text!, player4.text!, player5.text!].shuffled()
+            ppNames = "\(pNames[0])\n\(pNames[1])\n\(pNames[2])\n\(pNames[3])\n\(pNames[4])"
         }
         else if(secondPlayers == 6){
             if((player1.text ?? "").isEmpty){
@@ -215,8 +215,8 @@ class NamePlayers: ViewController {
             if((player6.text ?? "").isEmpty){
                 emptyTextAlert()
             }
-            let pNames = [player1.text, player2.text, player3.text].shuffled()
-            ppNames = "\(pNames)"
+            let pNames = [player1.text!, player2.text!, player3.text!, player4.text!, player5.text!, player6.text!].shuffled()
+            ppNames = "\(pNames[0])\n\(pNames[1])\n\(pNames[2])\n\(pNames[3])\n\(pNames[4])\n\(pNames[5])"
         }
         else if(secondPlayers == 7){
             if((player1.text ?? "").isEmpty){
@@ -240,8 +240,8 @@ class NamePlayers: ViewController {
             if((player7.text ?? "").isEmpty){
                 emptyTextAlert()
             }
-            let pNames = [player1.text, player2.text, player3.text].shuffled()
-            ppNames = "\(pNames)"
+            let pNames = [player1.text!, player2.text!, player3.text!, player4.text!, player5.text!, player6.text!, player7.text!].shuffled()
+            ppNames = "\(pNames[0])\n\(pNames[1])\n\(pNames[2])\n\(pNames[3])\n\(pNames[4])\n\(pNames[5])\n\(pNames[6])"
         }
         else if(secondPlayers == 8){
             if((player1.text ?? "").isEmpty){
@@ -268,8 +268,8 @@ class NamePlayers: ViewController {
             if((player8.text ?? "").isEmpty){
                 emptyTextAlert()
             }
-            let pNames = [player1.text, player2.text, player3.text].shuffled()
-            ppNames = "\(pNames)"
+            let pNames = [player1.text!, player2.text!, player3.text!, player4.text!, player5.text!, player6.text!, player7.text!, player8.text!].shuffled()
+            ppNames = "\(pNames[0])\n\(pNames[1])\n\(pNames[2])\n\(pNames[3])\n\(pNames[4])\n\(pNames[5])\n\(pNames[6])\n\(pNames[7])"
         }
         else if(secondPlayers == 9){
             if((player1.text ?? "").isEmpty){
@@ -299,8 +299,8 @@ class NamePlayers: ViewController {
             if((player9.text ?? "").isEmpty){
                 emptyTextAlert()
             }
-            let pNames = [player1.text, player2.text, player3.text].shuffled()
-            ppNames = "\(pNames)"
+            let pNames = [player1.text!, player2.text!, player3.text!, player4.text!, player5.text!, player6.text!, player7.text!, player8.text!, player9.text!].shuffled()
+            ppNames = "\(pNames[0])\n\(pNames[1])\n\(pNames[2])\n\(pNames[3])\n\(pNames[4])\n\(pNames[5])\n\(pNames[6])\n\(pNames[7])\n\(pNames[8])"
         }
         else if(secondPlayers == 10){
             if((player1.text ?? "").isEmpty){
@@ -333,8 +333,8 @@ class NamePlayers: ViewController {
             if((player10.text ?? "").isEmpty){
                 emptyTextAlert()
             }
-            let pNames = [player1.text, player2.text, player3.text].shuffled()
-            ppNames = "\(pNames)"
+            let pNames = [player1.text!, player2.text!, player3.text!, player4.text!, player5.text!, player6.text!, player7.text!, player8.text!, player9.text!, player10.text!].shuffled()
+            ppNames = "\(pNames[0])\n\(pNames[1])\n\(pNames[2])\n\(pNames[3])\n\(pNames[4])\n\(pNames[5])\n\(pNames[6])\n\(pNames[7])\n\(pNames[8])\n\(pNames[9])"
         }
         performSegue(withIdentifier: "toLayout", sender: self)
     }

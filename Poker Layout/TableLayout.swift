@@ -15,13 +15,7 @@ class TableLayout: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        finalNames = String(finalNames)
-        if(finalPlayers == 3){
-            resultsLabel.text = "\(finalPlayers) - \(finalNames)"
-        }
-        else{
-            resultsLabel.text = "more than 3"
-        }
+        resultsLabel.text = "\(finalPlayers) - \(finalNames)"
     }
     
     
