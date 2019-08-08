@@ -10,17 +10,20 @@ import UIKit
 
 class TableLayout: ViewController {
 
+    @IBOutlet weak var resultsLabel: UITextView!
+    @IBOutlet weak var xPlayerTable: UILabel!
+    
     var finalNames = ""
-    var finalPlayers = 3
+    var finalPlayers = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        resultsLabel.text = "\(finalPlayers) - \(finalNames)"
+        xPlayerTable.text = "\(finalPlayers) Player Table"
+        resultsLabel.text = "\(finalNames)"
     }
     
     
-    @IBOutlet weak var resultsLabel: UITextView!
-    
+
     
     
 }
