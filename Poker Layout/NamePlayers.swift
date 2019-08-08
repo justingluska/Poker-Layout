@@ -8,7 +8,16 @@
 
 import UIKit
 
-class NamePlayers: UIViewController {
+class NamePlayers: UIViewController, UITextFieldDelegate {
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     
     @IBOutlet weak var player1: UITextField!
     @IBOutlet weak var player2: UITextField!
@@ -24,6 +33,16 @@ class NamePlayers: UIViewController {
     var secondPlayers:Int = 3
     var enterNames:String = "Enter Player Names"
     override func viewDidLoad() {
+        self.player1.delegate = self
+        self.player2.delegate = self
+        self.player3.delegate = self
+        self.player4.delegate = self
+        self.player5.delegate = self
+        self.player6.delegate = self
+        self.player7.delegate = self
+        self.player8.delegate = self
+        self.player9.delegate = self
+        self.player10.delegate = self
         enterPlayNamesLabel.text = enterNames
         if(secondPlayers == 3){
             player1.isHidden = false
