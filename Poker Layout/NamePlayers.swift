@@ -178,7 +178,7 @@ class NamePlayers: UIViewController, UITextFieldDelegate {
                 emptyTextAlert()
             }
             let pNames = [player1.text!, player2.text!, player3.text!].shuffled()
-            ppNames = "\(pNames[0]) - D\n\(pNames[1]) - SB\n\(pNames[2]) - BB"
+            ppNames = "1ST: \(pNames[0]) - D\n2ND: \(pNames[1]) - SB\n3RD: \(pNames[2]) - BB"
         }
         else if(secondPlayers == 4){
             if((player1.text ?? "").isEmpty){
@@ -194,7 +194,7 @@ class NamePlayers: UIViewController, UITextFieldDelegate {
                 emptyTextAlert()
             }
             let pNames = [player1.text!, player2.text!, player3.text!, player4.text!].shuffled()
-            ppNames = "\(pNames[0]) - D\n\(pNames[1]) - SB\n\(pNames[2]) - BB\n\(pNames[3])"
+            ppNames = "1ST: \(pNames[0]) - D\n2ND: \(pNames[1]) - SB\n3RD: \(pNames[2]) - BB\n4TH: \(pNames[3])"
         }
         else if(secondPlayers == 5){
             if((player1.text ?? "").isEmpty){
@@ -213,7 +213,7 @@ class NamePlayers: UIViewController, UITextFieldDelegate {
                 emptyTextAlert()
             }
             let pNames = [player1.text!, player2.text!, player3.text!, player4.text!, player5.text!].shuffled()
-            ppNames = "\(pNames[0]) - D\n\(pNames[1]) - SB\n\(pNames[2]) - BB\n\(pNames[3])\n\(pNames[4])"
+            ppNames = "1ST: \(pNames[0]) - D\n2ND: \(pNames[1]) - SB\n3RD: \(pNames[2]) - BB\n4TH: \(pNames[3])\n5TH: \(pNames[4])"
         }
         else if(secondPlayers == 6){
             if((player1.text ?? "").isEmpty){
@@ -235,7 +235,7 @@ class NamePlayers: UIViewController, UITextFieldDelegate {
                 emptyTextAlert()
             }
             let pNames = [player1.text!, player2.text!, player3.text!, player4.text!, player5.text!, player6.text!].shuffled()
-            ppNames = "\(pNames[0]) - D\n\(pNames[1]) - SB\n\(pNames[2]) - BB\n\(pNames[3])\n\(pNames[4])\n\(pNames[5])"
+            ppNames = "1ST: \(pNames[0]) - D\n2ND: \(pNames[1]) - SB\n3RD: \(pNames[2]) - BB\n4TH: \(pNames[3])\n5TH: \(pNames[4])\n6TH: \(pNames[5])"
         }
         else if(secondPlayers == 7){
             if((player1.text ?? "").isEmpty){
@@ -260,7 +260,7 @@ class NamePlayers: UIViewController, UITextFieldDelegate {
                 emptyTextAlert()
             }
             let pNames = [player1.text!, player2.text!, player3.text!, player4.text!, player5.text!, player6.text!, player7.text!].shuffled()
-            ppNames = "\(pNames[0]) - D\n\(pNames[1]) - SB\n\(pNames[2]) - BB\n\(pNames[3])\n\(pNames[4])\n\(pNames[5])\n\(pNames[6])"
+            ppNames = "1ST: \(pNames[0]) - D\n2ND: \(pNames[1]) - SB\n3RD: \(pNames[2]) - BB\n4TH: \(pNames[3])\n5TH: \(pNames[4])\n6TH: \(pNames[5])\n7TH: \(pNames[6])"
         }
         else if(secondPlayers == 8){
             if((player1.text ?? "").isEmpty){
@@ -288,7 +288,7 @@ class NamePlayers: UIViewController, UITextFieldDelegate {
                 emptyTextAlert()
             }
             let pNames = [player1.text!, player2.text!, player3.text!, player4.text!, player5.text!, player6.text!, player7.text!, player8.text!].shuffled()
-            ppNames = "\(pNames[0]) - D\n\(pNames[1]) - SB\n\(pNames[2]) - BB\n\(pNames[3])\n\(pNames[4])\n\(pNames[5])\n\(pNames[6])\n\(pNames[7])"
+            ppNames = "1ST: \(pNames[0]) - D\n2ND: \(pNames[1]) - SB\n3RD: \(pNames[2]) - BB\n4TH: \(pNames[3])\n5TH: \(pNames[4])\n6TH: \(pNames[5])\n7TH: \(pNames[6])\n8TH: \(pNames[7])"
         }
         else if(secondPlayers == 9){
             if((player1.text ?? "").isEmpty){
@@ -319,7 +319,7 @@ class NamePlayers: UIViewController, UITextFieldDelegate {
                 emptyTextAlert()
             }
             let pNames = [player1.text!, player2.text!, player3.text!, player4.text!, player5.text!, player6.text!, player7.text!, player8.text!, player9.text!].shuffled()
-            ppNames = "\(pNames[0]) - D\n\(pNames[1]) - SB\n\(pNames[2]) - BB\n\(pNames[4])\n\(pNames[5])\n\(pNames[6])\n\(pNames[7])\n\(pNames[8])"
+            ppNames = "1ST: \(pNames[0]) - D\n2ND: \(pNames[1]) - SB\n3RD: \(pNames[2]) - BB\n4TH: \(pNames[3])\n5TH: \(pNames[4])\n6TH: \(pNames[5])\n7TH: \(pNames[6])\n8TH: \(pNames[7])\n9TH: \(pNames[8])"
         }
         else if(secondPlayers == 10){
             if((player1.text ?? "").isEmpty){
@@ -353,7 +353,7 @@ class NamePlayers: UIViewController, UITextFieldDelegate {
                 emptyTextAlert()
             }
             let pNames = [player1.text!, player2.text!, player3.text!, player4.text!, player5.text!, player6.text!, player7.text!, player8.text!, player9.text!, player10.text!].shuffled()
-            ppNames = "\(pNames[0]) - D\n\(pNames[1]) - SB\n\(pNames[2]) - BB\n\(pNames[3])\n\(pNames[4])\n\(pNames[5])\n\(pNames[6])\n\(pNames[7])\n\(pNames[8])\n\(pNames[9])"
+            ppNames = "1ST: \(pNames[0]) - D\n2ND: \(pNames[1]) - SB\n3RD: \(pNames[2]) - BB\n4TH: \(pNames[3])\n5TH: \(pNames[4])\n6TH: \(pNames[5])\n7TH: \(pNames[6])\n8TH: \(pNames[7])\n9TH: \(pNames[8])\n10TH: \(pNames[9])"
         }
         performSegue(withIdentifier: "toLayout", sender: self)
     }

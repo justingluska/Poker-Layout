@@ -21,11 +21,11 @@ class TableLayout: UIViewController, GADInterstitialDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-9134328104554845/8706610555")
         let request = GADRequest()
         interstitial.load(request)
-        xPlayerTable.text = "\(finalPlayers) Player Table"
-        resultsLabel.text = "\(finalNames)"
+        xPlayerTable.text = "\(finalPlayers) Player Table".uppercased()
+        resultsLabel.text = "\(finalNames)".uppercased()
     }
     
     

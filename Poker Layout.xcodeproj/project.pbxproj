@@ -19,6 +19,7 @@
 		D04DC72822FB7F1800AFC459 /* TableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04DC72722FB7F1800AFC459 /* TableLayout.swift */; };
 		D04DC72C22FBAE8D00AFC459 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = D04DC72B22FBAE8D00AFC459 /* help.png */; };
 		D04DC72E22FBB07000AFC459 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D04DC72D22FBB07000AFC459 /* home.png */; };
+		D0D7E1BD22FD0B9A006C539A /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D7E1BC22FD0B9A006C539A /* splash.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		D04DC72722FB7F1800AFC459 /* TableLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLayout.swift; sourceTree = "<group>"; };
 		D04DC72B22FBAE8D00AFC459 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
 		D04DC72D22FBB07000AFC459 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		D0D7E1BC22FD0B9A006C539A /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		E564CDBA801B6DCEC5E1B71C /* Pods_Poker_Layout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poker_Layout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 				D04DC72522FB7F0600AFC459 /* NamePlayers.swift */,
 				D04DC71622FB7D3500AFC459 /* Assets.xcassets */,
 				D04DC71822FB7D3500AFC459 /* LaunchScreen.storyboard */,
+				D0D7E1BC22FD0B9A006C539A /* splash.png */,
 				D04DC72B22FBAE8D00AFC459 /* help.png */,
 				D04DC72D22FBB07000AFC459 /* home.png */,
 				D04DC71B22FB7D3500AFC459 /* Info.plist */,
@@ -170,6 +173,7 @@
 				D04DC72E22FBB07000AFC459 /* home.png in Resources */,
 				D04DC71A22FB7D3500AFC459 /* LaunchScreen.storyboard in Resources */,
 				D04DC71722FB7D3500AFC459 /* Assets.xcassets in Resources */,
+				D0D7E1BD22FD0B9A006C539A /* splash.png in Resources */,
 				D04DC71222FB7D3500AFC459 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,7 +387,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.justingluska.Poker-Layout";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justingluska.my-Table";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -403,7 +407,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.justingluska.Poker-Layout";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justingluska.my-Table";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
