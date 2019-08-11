@@ -29,7 +29,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         //startButton.clipsToBounds = true
         //startButton.layer.cornerRadius = 15
         //helpButton.layer.cornerRadius = 15
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-9134328104554845/6074801683"
         bannerView.adSize = kGADAdSizeSmartBannerPortrait
         bannerView.delegate = self
         bannerView.rootViewController = self
