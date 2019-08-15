@@ -19,8 +19,8 @@ class SelectPlayers: UIViewController {
     
     var playerCount = 3
     
-    @IBOutlet weak var moveOn: UIButton!
     @IBOutlet weak var back: UIButton!
+    @IBOutlet weak var moveOn: UIButton!
     
     @IBOutlet weak var playerLabel: UILabel!
     
