@@ -371,10 +371,13 @@ class NamePlayers: UIViewController, UITextFieldDelegate, GADInterstitialDelegat
         
         interstitial!.present(fromRootViewController: self)
         createAndLoadInterstitial()
-        performSegue(withIdentifier: "toLayout", sender: self)
+        
 
     }
     
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        performSegue(withIdentifier: "toLayout", sender: self)
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "toLayout"){
