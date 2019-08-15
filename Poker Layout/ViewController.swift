@@ -12,12 +12,13 @@ import GoogleMobileAds
 class ViewController: UIViewController, GADBannerViewDelegate {
     
 
-    @IBOutlet weak var bannerView: GADBannerView!
+
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var helpButton: UIButton!
     @IBOutlet weak var sButt: UIButton!
     @IBOutlet weak var hButt: UIButton!
     
+    @IBOutlet weak var bannerView: GADBannerView!
     var banner: GADBannerView!
     
     override func viewDidLoad() {

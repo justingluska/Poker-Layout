@@ -11,15 +11,17 @@ import UIKit
 class SelectPlayers: UIViewController {
 
     override func viewDidLoad() {
-        
         super.viewDidLoad()
+        navigationController?.setNavigationBarHidden(false, animated: false)
         moveOn.layer.cornerRadius = 15
-        back.layer.cornerRadius = 15
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
     }
     
     var playerCount = 3
     
-    @IBOutlet weak var back: UIButton!
     @IBOutlet weak var moveOn: UIButton!
     
     @IBOutlet weak var playerLabel: UILabel!

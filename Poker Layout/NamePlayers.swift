@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class NamePlayers: UIViewController, UITextFieldDelegate {
+class NamePlayers: UIViewController, UITextFieldDelegate, GADInterstitialDelegate {
+    
+    var interstitial: GADInterstitial!
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         self.view.endEditing(true)
@@ -30,9 +33,19 @@ class NamePlayers: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var player9: UITextField!
     @IBOutlet weak var player10: UITextField!
     
+    func createAndLoadInterstitial(){
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/5135589807")
+        let request = GADRequest()
+        request.testDevices = [ kGADSimulatorID ]
+        interstitial.load(request)
+        interstitial.delegate = self
+        interstitial.present(fromRootViewController: self)
+    }
+    
     var secondPlayers:Int = 3
     var enterNames:String = "Enter Player Names"
     override func viewDidLoad() {
+        createAndLoadInterstitial()
         self.player1.delegate = self
         self.player2.delegate = self
         self.player3.delegate = self
@@ -355,7 +368,11 @@ class NamePlayers: UIViewController, UITextFieldDelegate {
             let pNames = [player1.text!, player2.text!, player3.text!, player4.text!, player5.text!, player6.text!, player7.text!, player8.text!, player9.text!, player10.text!].shuffled()
             ppNames = "1ST: \(pNames[0]) - D\n2ND: \(pNames[1]) - SB\n3RD: \(pNames[2]) - BB\n4TH: \(pNames[3])\n5TH: \(pNames[4])\n6TH: \(pNames[5])\n7TH: \(pNames[6])\n8TH: \(pNames[7])\n9TH: \(pNames[8])\n10TH: \(pNames[9])"
         }
+        
+        interstitial!.present(fromRootViewController: self)
+        createAndLoadInterstitial()
         performSegue(withIdentifier: "toLayout", sender: self)
+
     }
     
     
