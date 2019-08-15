@@ -40,7 +40,7 @@ class SelectPlayers: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "toPlayer"){
-        var fP = segue.destination as! NamePlayers
+        let fP = segue.destination as! NamePlayers
         fP.secondPlayers = self.playerCount
         fP.enterNames = "Enter \(self.playerCount) Names"
         }

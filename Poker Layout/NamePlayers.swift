@@ -381,7 +381,7 @@ class NamePlayers: UIViewController, UITextFieldDelegate, GADInterstitialDelegat
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "toLayout"){
-        var ffP = segue.destination as! TableLayout
+        let ffP = segue.destination as! TableLayout
         ffP.finalPlayers = String(self.secondPlayers)
         ffP.finalNames = ppNames
         }
