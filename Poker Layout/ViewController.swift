@@ -10,8 +10,6 @@ import UIKit
 import GoogleMobileAds
 
 class ViewController: UIViewController, GADBannerViewDelegate {
-    
-
 
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var helpButton: UIButton!
@@ -21,8 +19,13 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     @IBOutlet weak var bannerView: GADBannerView!
     var banner: GADBannerView!
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.setNavigationBarHidden(false, animated: false)
         sButt.clipsToBounds = true
         sButt.layer.cornerRadius = 8
         hButt.clipsToBounds = true

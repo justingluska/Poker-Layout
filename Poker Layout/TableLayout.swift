@@ -10,15 +10,20 @@ import UIKit
 
 class TableLayout: UIViewController {
 
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
+    
     @IBOutlet weak var resultsLabel: UITextView!
     @IBOutlet weak var xPlayerTable: UILabel!
-
     
     var finalNames = ""
     var finalPlayers = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
         xPlayerTable.text = "\(finalPlayers) Player Table".uppercased()
         resultsLabel.text = "\(finalNames)".uppercased()
         

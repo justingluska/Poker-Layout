@@ -9,15 +9,15 @@
 import UIKit
 
 class SelectPlayers: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        navigationController?.setNavigationBarHidden(false, animated: false)
-        moveOn.layer.cornerRadius = 15
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = false
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        moveOn.layer.cornerRadius = 15
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     var playerCount = 3

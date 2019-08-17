@@ -11,6 +11,8 @@ import GoogleMobileAds
 
 class NamePlayers: UIViewController, UITextFieldDelegate, GADInterstitialDelegate {
     
+    @IBOutlet weak var continueButton: UIButton!
+    
     var interstitial: GADInterstitial!
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
@@ -34,7 +36,7 @@ class NamePlayers: UIViewController, UITextFieldDelegate, GADInterstitialDelegat
     @IBOutlet weak var player10: UITextField!
     
     func createAndLoadInterstitial(){
-        interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/5135589807")
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-9134328104554845/8706610555")
         let request = GADRequest()
         request.testDevices = [ kGADSimulatorID ]
         interstitial.load(request)
@@ -42,10 +44,39 @@ class NamePlayers: UIViewController, UITextFieldDelegate, GADInterstitialDelegat
         interstitial.present(fromRootViewController: self)
     }
     
+    var seconds = 10
+    var timer = Timer()
+    var timerIsRunning = false
+    
+    func runTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(NamePlayers.updateTimer)), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateTimer() {
+        seconds -= 1     //This will decrement(count down)the seconds.
+        if(seconds >= 1){
+            continueButton.setTitle("Please wait \(seconds) seconds...", for: .normal)
+        }
+        else{
+            continueButton.setTitle("Please wait \(seconds) second...", for: .normal)
+            timer.invalidate()
+                self.continueButton.isUserInteractionEnabled = true
+                self.continueButton.setTitle("Continue to ad...", for: .normal)
+        }
+        
+    }
+    
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
+    
     var secondPlayers:Int = 3
     var enterNames:String = "Enter Player Names"
     override func viewDidLoad() {
+        navigationController?.setNavigationBarHidden(false, animated: false)
         createAndLoadInterstitial()
+        self.continueButton.isUserInteractionEnabled = false
+        self.runTimer()
         self.player1.delegate = self
         self.player2.delegate = self
         self.player3.delegate = self
@@ -156,6 +187,9 @@ class NamePlayers: UIViewController, UITextFieldDelegate, GADInterstitialDelegat
         super.viewDidLoad()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
+    }
     
     @IBOutlet weak var enterPlayNamesLabel: UILabel!
     
@@ -180,6 +214,7 @@ class NamePlayers: UIViewController, UITextFieldDelegate, GADInterstitialDelegat
     var ppNames:String = ""
     
     @IBAction func nextButton(_ sender: UIButton) {
+        
         if(secondPlayers == 3){
             if((player1.text ?? "").isEmpty){
                 emptyTextAlert()
@@ -370,7 +405,6 @@ class NamePlayers: UIViewController, UITextFieldDelegate, GADInterstitialDelegat
         }
         
         interstitial!.present(fromRootViewController: self)
-        createAndLoadInterstitial()
         
 
     }

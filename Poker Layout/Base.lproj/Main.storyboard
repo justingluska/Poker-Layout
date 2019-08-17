@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O5j-zp-0EP">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,34 +15,23 @@
             <objects>
                 <viewController storyboardIdentifier="Help" id="sIg-lS-301" customClass="Help" customModule="Poker_Layout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1ly-2Y-WWe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="help.png" translatesAutoresizingMaskIntoConstraints="NO" id="NrZ-Yg-pwK">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwC-LF-nWW">
-                                <rect key="frame" x="0.0" y="628" width="375" height="30"/>
-                                <state key="normal" title="go back">
-                                    <color key="titleColor" red="0.12549019610000001" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="pjp-WU-YFO" kind="showDetail" id="lcl-Sg-F6m"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.64050426800072791" green="0.64684589441657669" blue="0.64684589441657669" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="NrZ-Yg-pwK" firstAttribute="bottom" secondItem="fUU-6F-o2Y" secondAttribute="bottom" id="APs-Ps-Ekz"/>
-                            <constraint firstItem="nwC-LF-nWW" firstAttribute="trailing" secondItem="fUU-6F-o2Y" secondAttribute="trailing" id="Ith-8X-g8T"/>
-                            <constraint firstItem="nwC-LF-nWW" firstAttribute="leading" secondItem="fUU-6F-o2Y" secondAttribute="leading" id="OGn-oO-3Mk"/>
                             <constraint firstItem="NrZ-Yg-pwK" firstAttribute="leading" secondItem="fUU-6F-o2Y" secondAttribute="leading" id="UJ1-s1-tfc"/>
                             <constraint firstItem="NrZ-Yg-pwK" firstAttribute="trailing" secondItem="fUU-6F-o2Y" secondAttribute="trailing" id="WbT-mY-JFN"/>
                             <constraint firstItem="NrZ-Yg-pwK" firstAttribute="top" secondItem="fUU-6F-o2Y" secondAttribute="top" id="m5Z-uc-zAg"/>
-                            <constraint firstItem="fUU-6F-o2Y" firstAttribute="bottom" secondItem="nwC-LF-nWW" secondAttribute="bottom" constant="9" id="nPH-mO-I0k"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fUU-6F-o2Y"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fV-lR-Cwj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,10 +41,9 @@
         <scene sceneID="vJ7-Bh-AZo">
             <objects>
                 <navigationController id="O5j-zp-0EP" sceneMemberID="viewController">
-                    <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ycH-vA-nQ7">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="ycH-vA-nQ7">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yQk-gR-RTq">
@@ -74,38 +62,43 @@
             <objects>
                 <viewController storyboardIdentifier="StartScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pjp-WU-YFO" customClass="StartScreen" customModule="Poker_Layout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hGV-l7-ir8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="dnV-td-eBw">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" red="0.64050426800000004" green="0.64684589439999995" blue="0.64684589439999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L6q-ZO-bea" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="602" width="375" height="65"/>
+                                <rect key="frame" x="0.0" y="503" width="320" height="65"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="MQS-VP-gB0"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSO-jz-13q">
-                                <rect key="frame" x="20" y="512" width="335" height="40"/>
-                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
+                                <rect key="frame" x="20" y="406" width="280" height="47"/>
+                                <color key="backgroundColor" red="0.63921568627450975" green="0.6470588235294118" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                 <state key="normal" title="Help">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="sIg-lS-301" kind="showDetail" id="Pvk-pO-52X"/>
+                                    <action selector="helpDown:" destination="pjp-WU-YFO" eventType="touchDown" id="Hry-Bp-a9V"/>
+                                    <action selector="helpUp:" destination="pjp-WU-YFO" eventType="touchUpInside" id="NWM-zz-BIK"/>
+                                    <segue destination="sIg-lS-301" kind="show" id="Pvk-pO-52X"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDW-wq-VX1">
-                                <rect key="frame" x="20" y="452" width="335" height="40"/>
-                                <color key="backgroundColor" red="0.64050426800000004" green="0.64684589439999995" blue="0.64684589439999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
+                                <rect key="frame" x="20" y="339" width="280" height="47"/>
+                                <color key="backgroundColor" red="0.63921568627450975" green="0.6470588235294118" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                 <state key="normal" title="Start">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="startDown:" destination="pjp-WU-YFO" eventType="touchDown" id="xfl-fP-ywo"/>
+                                    <action selector="startUp:" destination="pjp-WU-YFO" eventType="touchUpInside" id="hTB-oK-xYg"/>
                                     <segue destination="Y36-nJ-nAn" kind="show" id="YuY-bQ-HXc"/>
                                 </connections>
                             </button>
@@ -129,8 +122,11 @@
                         <viewLayoutGuide key="safeArea" id="3jV-cN-zSp"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="tKB-9s-rkK"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
                         <outlet property="bannerView" destination="L6q-ZO-bea" id="drf-yJ-Alo"/>
+                        <outlet property="hButt" destination="XSO-jz-13q" id="PY6-8R-KUr"/>
+                        <outlet property="sButt" destination="cDW-wq-VX1" id="Moo-IA-s7D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LKG-dB-xcG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -142,17 +138,17 @@
             <objects>
                 <viewController storyboardIdentifier="SelectPlayers" id="Y36-nJ-nAn" customClass="SelectPlayers" customModule="Poker_Layout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Zs-lf-Nqq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[3]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nh2-2m-0Tb">
-                                <rect key="frame" x="160.5" y="303" width="54" height="61"/>
+                                <rect key="frame" x="133" y="253.5" width="54" height="61"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="52"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Poker games can have no less than 3 players and no greater than 10" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="Qxn-Yf-N4s">
-                                <rect key="frame" x="0.0" y="375.5" width="375" height="67"/>
+                                <rect key="frame" x="0.0" y="326" width="320" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="Xle-TW-eIL"/>
                                 </constraints>
@@ -161,9 +157,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjf-e3-5xp">
-                                <rect key="frame" x="20" y="625" width="335" height="32"/>
+                                <rect key="frame" x="20" y="511" width="280" height="47"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -172,7 +168,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Player Amount:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNR-1g-1EB">
-                                <rect key="frame" x="17" y="154.5" width="341" height="51"/>
+                                <rect key="frame" x="17" y="105" width="286" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="g8t-bk-nAn"/>
                                 </constraints>
@@ -181,7 +177,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="3" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="rvi-6i-w2z">
-                                <rect key="frame" x="73" y="239" width="229" height="65"/>
+                                <rect key="frame" x="73" y="189.5" width="174" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="UDw-3t-ga0"/>
                                 </constraints>
@@ -210,6 +206,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Z4-bj-cOq"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
                         <outlet property="moveOn" destination="Vjf-e3-5xp" id="SZq-23-hk4"/>
                         <outlet property="playerLabel" destination="nh2-2m-0Tb" id="uP1-Hb-cCA"/>
@@ -225,68 +222,68 @@
             <objects>
                 <viewController storyboardIdentifier="NamePlayers" id="f9Y-R9-hjT" customClass="NamePlayers" customModule="Poker_Layout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="11r-sa-Dhh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XJt-KB-gbk">
-                                <rect key="frame" x="127" y="183.5" width="121" height="300"/>
+                                <rect key="frame" x="40" y="227" width="240" height="300"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 1 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="K3o-Vc-4qL">
-                                        <rect key="frame" x="0.0" y="0.0" width="121" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 2 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4sK-Fy-UJy">
-                                        <rect key="frame" x="0.0" y="30" width="121" height="30"/>
+                                        <rect key="frame" x="0.0" y="30" width="240" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 3 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bFu-21-MJX">
-                                        <rect key="frame" x="0.0" y="60" width="121" height="30"/>
+                                        <rect key="frame" x="0.0" y="60" width="240" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 4 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LgW-11-upd">
-                                        <rect key="frame" x="0.0" y="90" width="121" height="30"/>
+                                        <rect key="frame" x="0.0" y="90" width="240" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 5 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="12a-HI-hCW">
-                                        <rect key="frame" x="0.0" y="120" width="121" height="30"/>
+                                        <rect key="frame" x="0.0" y="120" width="240" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 6 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Dfz-eo-9GV">
-                                        <rect key="frame" x="0.0" y="150" width="121" height="30"/>
+                                        <rect key="frame" x="0.0" y="150" width="240" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 7 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="i2F-vY-Ssk">
-                                        <rect key="frame" x="0.0" y="180" width="121" height="30"/>
+                                        <rect key="frame" x="0.0" y="180" width="240" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 8 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="G7R-XS-3to">
-                                        <rect key="frame" x="0.0" y="210" width="121" height="30"/>
+                                        <rect key="frame" x="0.0" y="210" width="240" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 9 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kyh-y6-Qhp">
-                                        <rect key="frame" x="0.0" y="240" width="121" height="30"/>
+                                        <rect key="frame" x="0.0" y="240" width="240" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 10 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NTn-FK-uvD">
-                                        <rect key="frame" x="0.0" y="270" width="121" height="30"/>
+                                        <rect key="frame" x="0.0" y="270" width="240" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
@@ -294,15 +291,15 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Player Names:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKI-2c-IrL">
-                                <rect key="frame" x="35" y="110.5" width="305" height="33"/>
+                                <rect key="frame" x="35" y="154" width="250" height="33"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHA-tS-60x">
-                                <rect key="frame" x="20" y="625" width="335" height="32"/>
-                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
-                                <state key="normal" title="Continue">
+                                <rect key="frame" x="20" y="515" width="280" height="43"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="26"/>
+                                <state key="normal" title="Please wait...">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -315,16 +312,20 @@
                         <constraints>
                             <constraint firstItem="S4n-kf-JUJ" firstAttribute="trailing" secondItem="ZHA-tS-60x" secondAttribute="trailing" constant="20" id="4SD-bL-I4b"/>
                             <constraint firstItem="ZHA-tS-60x" firstAttribute="leading" secondItem="S4n-kf-JUJ" secondAttribute="leading" constant="20" id="JlX-cM-y2S"/>
-                            <constraint firstItem="XJt-KB-gbk" firstAttribute="centerY" secondItem="11r-sa-Dhh" secondAttribute="centerY" id="TcL-mc-9I7"/>
+                            <constraint firstItem="XJt-KB-gbk" firstAttribute="leading" secondItem="S4n-kf-JUJ" secondAttribute="leading" constant="40" id="RPE-4X-94F"/>
+                            <constraint firstItem="S4n-kf-JUJ" firstAttribute="trailing" secondItem="XJt-KB-gbk" secondAttribute="trailing" constant="40" id="Uy1-QU-2yS"/>
                             <constraint firstItem="wKI-2c-IrL" firstAttribute="leading" secondItem="S4n-kf-JUJ" secondAttribute="leading" constant="35" id="WFa-wF-AxC"/>
                             <constraint firstItem="XJt-KB-gbk" firstAttribute="top" secondItem="wKI-2c-IrL" secondAttribute="bottom" constant="40" id="gSP-rQ-TQA"/>
+                            <constraint firstItem="wKI-2c-IrL" firstAttribute="top" secondItem="S4n-kf-JUJ" secondAttribute="top" constant="90" id="gSr-I6-VTs"/>
                             <constraint firstItem="XJt-KB-gbk" firstAttribute="centerX" secondItem="11r-sa-Dhh" secondAttribute="centerX" id="tOB-j5-MHz"/>
                             <constraint firstItem="S4n-kf-JUJ" firstAttribute="bottom" secondItem="ZHA-tS-60x" secondAttribute="bottom" constant="10" id="vMi-W0-lc3"/>
                             <constraint firstItem="S4n-kf-JUJ" firstAttribute="trailing" secondItem="wKI-2c-IrL" secondAttribute="trailing" constant="35" id="x5b-iy-cAY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="S4n-kf-JUJ"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
+                        <outlet property="continueButton" destination="ZHA-tS-60x" id="Ylf-4G-bkw"/>
                         <outlet property="enterPlayNamesLabel" destination="wKI-2c-IrL" id="Uo7-ag-Ukr"/>
                         <outlet property="player1" destination="K3o-Vc-4qL" id="4uf-yU-mb2"/>
                         <outlet property="player10" destination="NTn-FK-uvD" id="kje-Rt-ytA"/>
@@ -347,29 +348,29 @@
             <objects>
                 <viewController storyboardIdentifier="TableLayout" id="yTB-ux-bT0" customClass="TableLayout" customModule="Poker_Layout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Mk-LZ-YOw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRY-co-Td3">
-                                <rect key="frame" x="72" y="617" width="231" height="38"/>
-                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
+                                <rect key="frame" x="72" y="509" width="176" height="47"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                 <state key="normal" title="Return Home">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="returnHome:" destination="yTB-ux-bT0" eventType="touchUpInside" id="pii-06-Hk7"/>
-                                    <segue destination="pjp-WU-YFO" kind="show" id="DPH-51-QrK"/>
+                                    <segue destination="O5j-zp-0EP" kind="show" id="fF4-1J-N2S"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Seat 1:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yET-zj-ZeX">
-                                <rect key="frame" x="40" y="90" width="295" height="519"/>
+                                <rect key="frame" x="40" y="134" width="240" height="367"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Player Table" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysH-Hs-u6d">
-                                <rect key="frame" x="72" y="47" width="231" height="35"/>
+                                <rect key="frame" x="72" y="91" width="176" height="35"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                 <color key="textColor" red="0.50146732230000002" green="0.12211872310000001" blue="0.070339911419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -391,6 +392,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sx2-tU-FbE"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
                         <outlet property="resultsLabel" destination="yET-zj-ZeX" id="oVz-6h-9V7"/>
                         <outlet property="xPlayerTable" destination="ysH-Hs-u6d" id="6JT-aX-wZR"/>
@@ -405,8 +407,4 @@
         <image name="help.png" width="612" height="792"/>
         <image name="home" width="408" height="528"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="7Sv-Je-t9Z"/>
-        <segue reference="DPH-51-QrK"/>
-    </inferredMetricsTieBreakers>
 </document>
