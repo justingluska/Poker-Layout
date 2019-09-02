@@ -28,11 +28,5 @@ class TableLayout: UIViewController {
         resultsLabel.text = "\(finalNames)".uppercased()
         
     }
- 
-    @IBAction func returnHome(_ sender: Any) {
-
-
-    }
-
     
 }
