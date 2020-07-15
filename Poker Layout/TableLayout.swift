@@ -7,9 +7,15 @@
 //
 
 import UIKit
-
+import StoreKit
 class TableLayout: UIViewController {
 
+    enum AppStoreReviewManager {
+      static func requestReviewIfAppropriate() {
+        
+      }
+    }
+    
     override var prefersStatusBarHidden: Bool{
         return true
     }
@@ -27,6 +33,13 @@ class TableLayout: UIViewController {
         xPlayerTable.text = "\(finalPlayers) Player Table".uppercased()
         resultsLabel.text = "\(finalNames)".uppercased()
         
+        let seconds = 10.0
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+            SKStoreReviewController.requestReview()
+        }
+        
     }
+    
+    
     
 }
